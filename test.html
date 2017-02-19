@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function add(){
+  var name = prompt("fuck?", "<b>you</b>");
+  document.body.children[0].innerHTML += name;
+  document.body.children[1].textContent += name;
+}
+function flush(){
+  document.body.children[0].innerHTML = "";
+  document.body.children[1].textContent = "";
+}
+</script>
+</head>
+<body>
+<div></div>
+<div></div>
+<input type="button"  onclick="add()" value="sucj!s"/>
+<input type="button"  onclick="flush()" value="flush"/>
+</body>
+</html>
